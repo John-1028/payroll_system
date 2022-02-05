@@ -44,10 +44,10 @@ public class CommissionedClassification implements PaymentClassification {
     /**
      * 计算提成
      *
-     * @param totalSalesAmount 总销售额
+     * @param totalSalesAmount 总销售数
      * @return 提成
      */
     private double calculateCommission(double totalSalesAmount) {
-        return totalSalesAmount * itsCommissionRate * 0.01;
+        return totalSalesAmount * itsCommissionRate;
     }
 }
